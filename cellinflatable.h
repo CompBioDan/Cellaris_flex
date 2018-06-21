@@ -13,7 +13,7 @@ public:
 			delete mCloths[i];
 	}
 
-	void AddInflatable(const Mesh* mesh, float overPressure, int phase)
+	void AddCell(const Mesh* mesh, float overPressure, int phase)
 	{
 		const int startVertex = g_buffers->positions.size();
 
@@ -97,7 +97,7 @@ public:
 				//mesh->Transform(TranslationMatrix(Point3(i*2.0f, 1.0f + y * 2.0f, 1.5f)));
 				mesh->Transform(TranslationMatrix(Point3(5.0f, 1.0f + y * 2.0f, 1.5f)));
 
-				AddInflatable(mesh, mPressure, NvFlexMakePhase(group++, 0));
+				AddCell(mesh, mPressure, NvFlexMakePhase(group++, 0));
 
 				delete mesh;
 			}
