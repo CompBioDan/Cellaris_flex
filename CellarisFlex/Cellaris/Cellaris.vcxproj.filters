@@ -33,9 +33,6 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="scenes\scenes.h">
-      <Filter>scenes</Filter>
-    </ClInclude>
     <ClInclude Include="cells\cell.h">
       <Filter>cells</Filter>
     </ClInclude>
@@ -48,6 +45,318 @@
     <ClInclude Include="utilities\timestepper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="scenes\scenes.h">
+      <Filter>scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="cells\cellpopulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\aabbtree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\cloth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\convex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\extrude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\mat22.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\mat33.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\mat44.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\maths.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\matnn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\perlin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\pfm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\point3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\quat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\sdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\skylight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\tga.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\vec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\vec3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\vec4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\core\voxelize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\include\NvFlex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\include\NvFlexDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\include\NvFlexExt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\cellexample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\include\createscenes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\begin_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\close_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_blendmode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_clipboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_cpuinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_egl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_endian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_filesystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_gamecontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_gesture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_haptic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_hints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_keycode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_loadso.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_messagebox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_name.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengl_glext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2_gl2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2_gl2ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2_gl2platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2_khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_pixels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_power.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_quit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_revision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_rwops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_scancode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_stdinc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_surface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_syswm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_compare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_fuzzer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_harness.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_images.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_touch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -55,9 +364,6 @@
     </ClCompile>
     <ClCompile Include="Cellaris.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="scenes\scenes.cpp">
-      <Filter>scenes</Filter>
     </ClCompile>
     <ClCompile Include="cells\cell.cpp">
       <Filter>cells</Filter>
@@ -69,6 +375,48 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="utilities\timestepper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\scenes.cpp">
+      <Filter>scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="cells\cellpopulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\aabbtree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\extrude.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\maths.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\perlin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\pfm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\sdf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\tga.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flex\core\voxelize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\global.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

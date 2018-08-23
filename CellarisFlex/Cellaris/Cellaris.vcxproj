@@ -23,7 +23,7 @@
     <ProjectGuid>{B8C1A6F4-EC07-4799-AA02-9D7B81972CE0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Cellaris</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -42,13 +42,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -152,15 +152,130 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="cells\cell.h" />
+    <ClInclude Include="cells\cellpopulation.h" />
+    <ClInclude Include="flex\cellexample.h" />
+    <ClInclude Include="flex\core\aabbtree.h" />
+    <ClInclude Include="flex\core\cloth.h" />
+    <ClInclude Include="flex\core\convex.h" />
+    <ClInclude Include="flex\core\core.h" />
+    <ClInclude Include="flex\core\extrude.h" />
+    <ClInclude Include="flex\core\mat22.h" />
+    <ClInclude Include="flex\core\mat33.h" />
+    <ClInclude Include="flex\core\mat44.h" />
+    <ClInclude Include="flex\core\maths.h" />
+    <ClInclude Include="flex\core\matnn.h" />
+    <ClInclude Include="flex\core\mesh.h" />
+    <ClInclude Include="flex\core\perlin.h" />
+    <ClInclude Include="flex\core\pfm.h" />
+    <ClInclude Include="flex\core\platform.h" />
+    <ClInclude Include="flex\core\point3.h" />
+    <ClInclude Include="flex\core\quat.h" />
+    <ClInclude Include="flex\core\sdf.h" />
+    <ClInclude Include="flex\core\skylight.h" />
+    <ClInclude Include="flex\core\tga.h" />
+    <ClInclude Include="flex\core\types.h" />
+    <ClInclude Include="flex\core\vec2.h" />
+    <ClInclude Include="flex\core\vec3.h" />
+    <ClInclude Include="flex\core\vec4.h" />
+    <ClInclude Include="flex\core\voxelize.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\begin_code.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\close_code.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_assert.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_atomic.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_audio.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_bits.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_blendmode.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_clipboard.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_config.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_cpuinfo.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_egl.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_endian.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_error.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_events.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_filesystem.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_gamecontroller.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_gesture.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_haptic.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_hints.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_joystick.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_keyboard.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_keycode.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_loadso.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_log.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_main.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_messagebox.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_mouse.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_mutex.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_name.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengl.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2_gl2.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_opengl_glext.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_pixels.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_platform.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_power.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_quit.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_rect.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_render.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_revision.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_rwops.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_scancode.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_shape.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_stdinc.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_surface.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_system.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_syswm.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_assert.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_common.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_compare.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_crc32.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_font.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_fuzzer.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_harness.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_images.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_log.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_md5.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_test_random.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_thread.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_timer.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_touch.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_types.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_version.h" />
+    <ClInclude Include="flex\external\SDL2-2.0.4\include\SDL_video.h" />
+    <ClInclude Include="flex\include\createscenes.h" />
+    <ClInclude Include="flex\include\NvFlex.h" />
+    <ClInclude Include="flex\include\NvFlexDevice.h" />
+    <ClInclude Include="flex\include\NvFlexExt.h" />
+    <ClInclude Include="imgui.h" />
     <ClInclude Include="scenes\scenes.h" />
+    <ClInclude Include="shaders.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="utilities\datastore.h" />
+    <ClInclude Include="utilities\global.h" />
     <ClInclude Include="utilities\scenetime.h" />
     <ClInclude Include="utilities\timestepper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cellaris.cpp" />
     <ClCompile Include="cells\cell.cpp" />
+    <ClCompile Include="cells\cellpopulation.cpp" />
+    <ClCompile Include="flex\core\aabbtree.cpp" />
+    <ClCompile Include="flex\core\core.cpp" />
+    <ClCompile Include="flex\core\extrude.cpp" />
+    <ClCompile Include="flex\core\maths.cpp" />
+    <ClCompile Include="flex\core\mesh.cpp" />
+    <ClCompile Include="flex\core\perlin.cpp" />
+    <ClCompile Include="flex\core\pfm.cpp" />
+    <ClCompile Include="flex\core\platform.cpp" />
+    <ClCompile Include="flex\core\sdf.cpp" />
+    <ClCompile Include="flex\core\tga.cpp" />
+    <ClCompile Include="flex\core\voxelize.cpp" />
     <ClCompile Include="scenes\scenes.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -169,6 +284,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="utilities\datastore.cpp" />
+    <ClCompile Include="utilities\global.cpp" />
     <ClCompile Include="utilities\scenetime.cpp" />
     <ClCompile Include="utilities\timestepper.cpp" />
   </ItemGroup>
