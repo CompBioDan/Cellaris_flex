@@ -5,65 +5,66 @@
 
 #include <vector>
 #include <climits>
+#include "../utilities/datastore.h"
+
+class Cell;
 
 class Scene
 {
 
 protected: 
 
-	// scene timestep
-	double mDt; 
+	double mDt; /** scene timestep */
 
-	// scene end time
-	double mEndTime;
+	double mEndTime; /** scene end time */
+	 
+	unsigned mNumBirths; /** number of births during scene */
 
-	// number of births during scene
-	unsigned mNumBirths;
+	int numActiveParticles; /** number of active particles in scene (used for FleX) */
 
-	// sampling (output) ratio 
-	unsigned mSamplingTimestepMultiple;
+	unsigned mSamplingTimestepMultiple; /** sampling (output) timestep ratio */
 
-	// simulation output directory
-	std::string mSceneOutputDirectory;
+	std::string mSceneOutputDirectory; /** scene output directory */
 
 public: 
 
-	static Scene* Instance();
+	static Scene* Instance(); /** Scene instance */
 
-	// Constructor
-	Scene(); // population object as input & initialise cellsdoublt 
+	Scene(); /** Scene constructor */
 
-	// return the simulation timestep
-	double getDt();
+	void addCell(Cell* cell); /** Method for adding a new cell to the scene */
 
-	// return number of births in simulation
-	unsigned getNumBirths();
+	Cell* getCell(unsigned int cellID); /** Method to return specific cell entry */
 
-	// set (for updating) number of births
-	void setBirths(int births);
+	int getNumberCells(); /** return number of cells in scene */
 
-	// set the dt
-	void setDt(double dt);
+	double getDt(); /** return the simulation timestep */
 
-	// set sim end time
-	void setEndTime(double endTime);
+	unsigned getNumBirths(); /** return number of births in simulation */
 
-	// set output directory
-	void setOutputDirectory(std::string outputDirectory);
+	void setBirths(int births); /** set the number of births during simulation*/
+	
+	void setDt(double dt); /** set the timestep */
 
-	// set the sampling (output) timestep ratio 
-	void setSamplingTimeStepMultiple(unsigned samplingTimestepMultiple);
+	void setEndTime(double endTime); /** set simulation end time*/
 
-	// Main solve method
-	void Solve();
+	void setOutputDirectory(std::string outputDirectory); /** set output directory */
 
-	static void Destroy();
+	void setSamplingTimeStepMultiple(unsigned samplingTimestepMultiple); /** set the sampling (output) timestep ratio */
+
+	void setNumberActiveParticles(int numactiveparticles); /** set number of active particles in the scene */
+
+	int getNumberActiveParticles(); /** return the number of active particles in the scene */
+
+	void Solve(); /** main solve method */
+
+	static void Destroy(); /** destroy instance of the scene */
 
 private:
 
-	// pointer to the singleton instance of this class
-	static Scene* mpInstance;
+	static Scene* mpInstance; /** pointer to the singleton instance of this class */
 
+	CellarisVector<Cell*> cell_population; /** vector containing the population of cell pointers*/
 
 };
 
