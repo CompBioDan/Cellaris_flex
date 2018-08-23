@@ -55,4 +55,67 @@
 		doubleVec3d pos;
 	};
 
+	template<typename T>
+	class CellarisVector {
+	private:
+		T * elem;
+		unsigned long size;
+		unsigned long count;
+		unsigned long capacity;
+	public:
+		unsigned long getSize() {
+			return size;
+		}
+		unsigned long getCount() {
+			return count;
+		}
+		CellarisVector() {
+			elem = new T[10];
+			count = size = 0;
+			capacity = 10;
+		}
+		CellarisVector(unsigned long s) {
+			elem = new T[s];
+			count = size = 0;
+			capacity = s;
+		}
+		~CellarisVector() {
+			delete[] elem;
+		}
+		void setCapacity(unsigned long s) {
+			elem = new T[s];
+			count = size = 0;
+			capacity = s;
+		}
+		T& operator[](int i) {
+			return elem[i];
+		}
+		void add(T& newElem) {
+			elem[size++] = newElem;
+			count++;
+			if (size / capacity > 0.8) {
+				capacity *= 2;
+				T* temp = new T[capacity];
+				int j = 0;
+				for (int i = 0; i != size; ++i) {
+					if (elem[i] != NULL)
+						temp[j++] = elem[i];
+				}
+				delete[] elem;
+				elem = temp;
+				count = size = j;
+			}
+		}
+		;
+		void remove(T& newElem) {
+			for (int i = 0; i != size; ++i)
+				if (newElem == elem[i]) {
+					elem[i] = NULL;
+					count--;
+					return;
+				}
+		}
+		;
+	};
+
 #endif /* DATASTOR_H_ */

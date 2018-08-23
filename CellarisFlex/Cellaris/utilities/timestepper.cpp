@@ -79,5 +79,11 @@ double TimeStepper::GetNextTimeStep()
 {
 	double dt = mDt;
 
+	if (mNextTime >= mEnd)
+	{
+		dt = mEnd - mTime;
+	}
+
 	return dt;
 }
+

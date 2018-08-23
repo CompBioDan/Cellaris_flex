@@ -89,3 +89,20 @@ void SceneTime::SetEndTimeAndNumberOfTimeSteps(double endTime, unsigned totalTim
 {
 	mpTimeStepper.reset(new TimeStepper(mStartTime, endTime, (endTime - mStartTime) / totalTimeStepsInSimulation));
 }
+
+void SceneTime::ResetEndTimeAndNumberOfTimeSteps(const double& rEndTime, const unsigned& rNumberOfTimeStepsInThisRun)
+{
+	/** start time is the timestepper current time*/
+	mStartTime = mpTimeStepper->GetTime();
+
+	assert(rEndTime > mStartTime);
+
+	/** reset the machinery that works out the time */
+	mpTimeStepper.reset(new TimeStepper(mStartTime, rEndTime, (rEndTime - mStartTime) / rNumberOfTimeStepsInThisRun));
+}
+
+bool SceneTime::HasFinished() const
+{
+	return(mpTimeStepper->IsTimeAtEnd());
+}
+

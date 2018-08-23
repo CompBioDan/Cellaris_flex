@@ -26,6 +26,8 @@ public:
 	/** Sets the end time and number of timesteps - called after SetStartTime() but before other methods */
 	void SetEndTimeAndNumberOfTimeSteps(double endTime, unsigned totalSimulationTimeSteps);
 
+	void ResetEndTimeAndNumberOfTimeSteps(const double& rEndTime, const unsigned& rNumberOfTimeStepsInThisRun);
+
 	/** @return the timestep for the simulation, set in earlier calls */
 	double GetTimeStep() const;
 
@@ -49,6 +51,9 @@ public:
 
 	/** @return the simulation end time */
 	double GetEndTime() const;
+
+	/** Has the simulation finished running */
+	bool HasFinished() const;
 
 protected:
 
