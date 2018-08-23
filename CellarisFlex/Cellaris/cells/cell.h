@@ -9,7 +9,6 @@
 #define CELL_H_
 
 #include "../stdafx.h"
-//#include "../core/vec3.h"
 #include "../utilities/datastore.h"
 #include "../utilities/scenetime.h"
 #include "../scenes//scenes.h"
@@ -25,43 +24,57 @@ private:
 
 public:
 
-	Cell(); // create a new cell
+	Cell(); // cell constructor
 
-	//virtual ~Cell();
+	Cell* divideCell(); // method for dividing the cell creating new daughter cell and allocating data
 
 	//virtual void update();
 
+	// Cell methods
 	void setBirthTime(double birthTime); // set the cells birthtime
 
-	double getBirthTime() const;
+	double getBirthTime() const; // return cell birth time
+	 
+	double getAge() const; // return cell age
 
-	double getAge() const;
+	void setCellPos(doubleVec3d position); // set cell's position
 
-	void setCellPos(doubleVec3d position);
+	doubleVec3d getCellPos() const; // return cell position
 
-	doubleVec3d getCellPos() const;
+	bool readyToDivide(); // flag for division
 
-	bool readyToDivide();
+	void setCellId(unsigned cellId); // allocate cell ID
 
-	void setCellId(unsigned cellId);
+	unsigned getCellId() const; // return cell ID value
 
-	void resetCell();
+	void resetCell(); // reset cell: currently used to reset the age of the mother cell following division
 
-	unsigned getCellId() const;
+	void setParticleOffset(int particleoffset);
 
-	Cell* divideCell();
+	void setNumberParticles(int numparticles);
+
+	int getParticleOffset();
 
 	// Cell data
-	double mCellBirthTime;
+	int particle_offset; // integer position of first cell particle within the FleX buffers
 
-	std::vector<int> mIndices; // list of indices for particles belonging to cell
+	int number_particles; // number of particles that form the cell
 
-	doubleVec3d mPosition; // position of first particle in cell (arbitrary)
+	int spring_offset; // integer position of first cell spring within the FleX buffers
 
-	unsigned mCellId; // identifier id for the cell
+	int number_springs; // number of springs forming the cell
 
-	double mCellAge; // age of the cell
+	double cell_birth_time; // cell's birth time
 
+	double cell_age; // cell age
+
+	unsigned cell_id; // identifier id for the cell
+
+	doubleVec3d cell_position; // position of first particle in cell (arbitrary)
+
+	int cell_type; // CHANGE: create a seperate 'attribute' class to encompass cell differentiators
+
+	int grow; /** flag specifying whether a cell should grow this scene timestep */
 
 };
 
